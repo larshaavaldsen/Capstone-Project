@@ -1,10 +1,10 @@
 # About
 
-Container for adding/tracking challenges in our environment
+Container for adding/tracking challenges in our environment. When deploying with our docker compose, be sure to mount /usr/src/app to a volume to ensure persistence of challenge completion statuses
 
 # Adding challenges -
 
-You can use this template for adding challenges -
+You can use this template for adding challenges into db.json -
 
 ```
     {
