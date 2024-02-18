@@ -4,7 +4,7 @@ Container for adding/tracking challenges in our environment
 
 # Adding challenges -
 
-You can use this template for adding challenges -
+You can use this template for adding challenges into db.json -
 
 ```
     {
