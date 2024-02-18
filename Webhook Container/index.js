@@ -46,6 +46,11 @@ function challengeComplete(path) {
   });
 }
 
+app.get("/statuses", (req, res) => {
+  var db = JSON.parse(fs.readFileSync("./db.json", "utf8"));
+  res.send(db);
+});
+
 app.get("/*", (req, res) => {
   res.status(200);
   res.send();
