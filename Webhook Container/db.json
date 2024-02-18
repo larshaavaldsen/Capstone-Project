@@ -1,0 +1,19 @@
+{
+  "challenges": [
+    {
+      "name": "Challenge1",
+      "points": 100,
+      "completed": false
+    },
+    {
+      "name": "Challenge2",
+      "points": 100,
+      "completed": false
+    },
+    {
+      "name": "Challenge3",
+      "points": 100,
+      "completed": true
+    }
+  ]
+}
