@@ -46,6 +46,7 @@ function challengeComplete(path) {
   });
 }
 
+// statues endpoint to dump current database state
 app.get("/statuses", (req, res) => {
   var db = JSON.parse(fs.readFileSync("./db.json", "utf8"));
   res.send(db);
