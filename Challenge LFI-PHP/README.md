@@ -1,11 +1,7 @@
 # LFI-Easy-Hacking-Challenge
 A simple LFI and cookie exploitation challenge
 
-
-# About
-I made this simple web app to help myself understand how LFI works from the back end, and added some silly cookie exploitation in for fun. This web app is set up extremely stupidly, and there are many security flaws in it. But that's kind of the point. To set up simply put the files contained in the "webapp" folder into an environment running PHP and a web server. I would recommend restricting this app to your local network, because I'm sure there are ways to abuse this app more maliciously. 
-
-# Walkthrough (caution spoilers)
+# Walkthrough
 <details>
   <summary>Walkthrough</summary>
   
