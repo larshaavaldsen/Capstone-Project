@@ -24,6 +24,11 @@ services:
     networks:
       - webnet
 
+  webhookcontainer:
+    build: "../Webhook Container"
+    ports:
+      - "3000:3000"
+
   kali:
     build: ./kali
     networks:
