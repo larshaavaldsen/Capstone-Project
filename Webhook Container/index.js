@@ -4,6 +4,9 @@ const fs = require("fs");
 const app = express();
 const PORT = 3000;
 
+// view engine for serving templates
+app.set('view engine', 'pug') 
+
 function challengeComplete(path) {
   path = path.slice(1); // remove '/'
   // open our db.json and load
@@ -45,6 +48,11 @@ function challengeComplete(path) {
     );
   });
 }
+
+app.get('/', (req, res) => {
+  var db = JSON.parse(fs.readFileSync("./db.json", "utf8"));
+  res.render('index', { title: 'Hey', statuses: db.challenges })
+})
 
 // statues endpoint to dump current database state
 app.get("/statuses", (req, res) => {

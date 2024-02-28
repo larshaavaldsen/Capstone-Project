@@ -1,0 +1,8 @@
+html
+  head
+    title= "Challenge Statuses"
+  body
+    h1= "Current Completion Statuses"
+    ul
+      each chall in statuses
+        li= chall.name + ":" + chall.completed
