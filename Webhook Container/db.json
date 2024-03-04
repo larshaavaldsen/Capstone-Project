@@ -1,7 +1,7 @@
 {
   "challenges": [
     {
-      "name": "Challenge1",
+      "name": "lfi-challenge",
       "points": 100,
       "completed": false
     },

@@ -1,7 +1,8 @@
 <?php
 include 'secure/cookiecheck.php';
 if (checkKook()){
-    print('Congratulations, you have compromised this site, hopefully it was a bit of a challenge, but I presume it was pretty easy. Good work!');
+    print('Congratulations, you have compromised this site. Good work!');
+    get_headers("http://172.28.1.6:3000/lfi-challenge");
 }
 else{
     $bruh = "(ง'̀-'́)ง";
