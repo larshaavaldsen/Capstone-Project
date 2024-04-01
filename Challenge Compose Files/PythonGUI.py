@@ -3,13 +3,13 @@ import os
 
 def get_compose_files():
     compose_files = []
-    for file_name in os.listdir("Challenge Compose Files"):
+    for file_name in os.listdir("."):
         if file_name.endswith(".yaml") or file_name.endswith(".yml"):
             compose_files.append(file_name)
     return compose_files
 
 def get_label_from_file(file_name):
-    with open(f"Challenge Compose Files/{file_name}", "r") as file:
+    with open(f"{file_name}", "r") as file:
         first_line = file.readline().strip()
         if first_line.startswith("#"):
             return first_line[1:].strip()
@@ -53,8 +53,9 @@ def main(stdscr):
             if selected_label:
                 stdscr.addstr(0, 0, f"Selected: {selected_label}. Running docker-compose...")
                 stdscr.refresh()
-                os.system(f"docker-compose -f 'Challenge Compose Files/{selected_file}' up -d")
-                os.system(f"docker-compose -f 'Challenge Compose Files/{selected_file}' exec kali /bin/bash")
+                os.system(f"docker compose -f '{selected_file}' up -d > docker-compose.log 2>&1")
+                print(f"docker compose -f '{selected_file}' up -d > docker-compose.log 2>&1")
+                os.system(f"docker compose -f '{selected_file}' exec kali /bin/bash")
                 break
             else:
                 stdscr.addstr(0, 0, "Error: No label found for selected file.")

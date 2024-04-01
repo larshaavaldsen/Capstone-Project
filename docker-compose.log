@@ -1,0 +1,7 @@
+ Container challengecomposefiles-backend-1  Created
+ Container challengecomposefiles-lfi-challenge-1  Created
+ Container challengecomposefiles-kali-1  Created
+ Container challengecomposefiles-frontend-1  Created
+ Container challengecomposefiles-backend-1  Starting
+ Container challengecomposefiles-kali-1  Starting
+Error response from daemon: network 933c3fc02c82c980a8b72829ae039835eb3f44f0dcf55cbb0b8504a25bddbe0c not found
