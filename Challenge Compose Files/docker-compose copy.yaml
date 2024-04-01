@@ -1,4 +1,4 @@
-#Challenge 1: Test
+#Challenge 2: Test
 version: '3.8'
 
 services:
@@ -21,14 +21,8 @@ services:
         ipv4_address: 172.28.1.3
         aliases:
           - lfi-challenge
-  
-  webhook-container:
-    build: "./Webhook Container"
-    networks:
-      webnet:
-        ipv4_address: 172.28.1.6
-        aliases:
-          - webhook-container
+    depends_on:
+      - backend
 
   backend:
     image: python:3.8-slim
