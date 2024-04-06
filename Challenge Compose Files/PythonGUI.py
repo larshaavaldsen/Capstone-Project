@@ -1,5 +1,9 @@
 import curses
 import os
+import webbrowser
+
+documentation_link = "www.youtube.com"
+scoring_link = "www.google.com"
 
 def get_compose_files():
     compose_files = []
@@ -31,22 +35,13 @@ def print_menu(stdscr, selected_row_idx, compose_files):
 "░░░░░   ░░░░░  ░░░░░░░░  ░░░░░░  ░░░░ ░░░░░  ░░░░░░  ░░░░░          ░░░░░░░░░   ░░░░░░░░   ░░░░░░░░ ░░░░ ░░░░░    ░░░░░  ░░░░░  ░░░░░░     ░░░░░  "
     ]
 
-    # Simple ASCII Dragon
-    dragon_lines = [
-    ]
-
     # Print Banner
     banner_start_y = 1
     for i, line in enumerate(banner_lines):
         stdscr.addstr(banner_start_y + i, (w - len(line)) // 2, line)
 
-    # Print Dragon
-    dragon_start_y = banner_start_y + len(banner_lines) + 1
-    for i, line in enumerate(dragon_lines):
-        stdscr.addstr(dragon_start_y + i, (w - len(line)) // 2, line)
-
     # Adjust menu start position based on the dragon drawing
-    menu_start_y = dragon_start_y + len(dragon_lines) + 2
+    menu_start_y = banner_start_y + len(banner_lines) + 1
     for idx, file_name in enumerate(compose_files):
         x = w//2 - len(file_name)//2
         y = menu_start_y + idx
@@ -68,6 +63,8 @@ def main(stdscr):
         stdscr.refresh()
         stdscr.getch()
         return
+    compose_files.append("Documentation/Guides")
+    compose_files.append("Scoring")
     compose_files.append("Exit")
     current_row_idx = 0
     print_menu(stdscr, current_row_idx, compose_files)
@@ -79,7 +76,11 @@ def main(stdscr):
         elif key == curses.KEY_DOWN and current_row_idx < len(compose_files) - 1:
             current_row_idx += 1
         elif key == curses.KEY_ENTER or key in [10, 13]:
-            if current_row_idx == len(compose_files) - 1:
+            if current_row_idx == len(compose_files) - 3:
+                webbrowser.open_new_tab(documentation_link)
+            elif current_row_idx == len(compose_files) - 2:
+                webbrowser.open_new_tab(scoring_link)
+            elif current_row_idx == len(compose_files) - 1:
                 break  # Exit the loop if "Exit" is selected
             else:
                 selected_file = compose_files[current_row_idx]
