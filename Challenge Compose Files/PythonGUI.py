@@ -40,17 +40,18 @@ def print_menu(stdscr, selected_row_idx, compose_files):
     for i, line in enumerate(banner_lines):
         stdscr.addstr(banner_start_y + i, (w - len(line)) // 2, line)
 
-    # Adjust menu start position based on the dragon drawing
+    # Adjust menu start position based on the banner
     menu_start_y = banner_start_y + len(banner_lines) + 1
     for idx, file_name in enumerate(compose_files):
-        x = w//2 - len(file_name)//2
+        label = get_label_from_file(file_name) if file_name.endswith((".yaml", ".yml")) else file_name
+        x = w//2 - len(label)//2
         y = menu_start_y + idx
         if idx == selected_row_idx:
             stdscr.attron(curses.color_pair(1))
-            stdscr.addstr(y, x, file_name)
+            stdscr.addstr(y, x, label)
             stdscr.attroff(curses.color_pair(1))
         else:
-            stdscr.addstr(y, x, file_name)
+            stdscr.addstr(y, x, label)
     stdscr.refresh()
 
 
@@ -86,11 +87,11 @@ def main(stdscr):
                 selected_file = compose_files[current_row_idx]
                 selected_label = get_label_from_file(selected_file)
                 if selected_label:
-                    stdscr.addstr(0, 0, f"Selected: {selected_label}. Running docker-compose... \n")
+                    stdscr.addstr(0, 0, f"Selected: {selected_label}. Running docker compose... \n")
                     stdscr.refresh()
                     os.system(f"docker compose -f '{selected_file}' up -d > /dev/null 2>&1")
                     os.system(f"docker compose -f '{selected_file}' exec kali /bin/bash")
-                    print("Turning Off Challenge")
+                    print("Turning Off Challenge...")
                     os.system(f"docker compose -f '{selected_file}' down > /dev/null 2>&1")
                 else:
                     stdscr.addstr(0, 0, "Error: No label found for selected file.")
@@ -100,3 +101,4 @@ def main(stdscr):
 
 if __name__ == "__main__":
     curses.wrapper(main)
+

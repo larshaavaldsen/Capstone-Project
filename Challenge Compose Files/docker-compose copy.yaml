@@ -1,15 +1,15 @@
-#Challenge 2: Test
-version: '3.8'
+#Challenge 3: Test
+version: "3.8"
 
 networks:
   webnet:
     driver: bridge
-    name: webnet    
+    name: webnet
     ipam:
       driver: default
       config:
         - subnet: 172.28.1.0/24
-        
+
 services:
   frontend:
     image: httpd:latest
@@ -54,5 +54,4 @@ services:
         aliases:
           - kali
     command: tail -f /dev/null # Keep the container running
-
 
