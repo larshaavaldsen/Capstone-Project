@@ -37,8 +37,9 @@ def print_menu(stdscr, selected_row_idx, compose_files):
 
     # Print Banner
     banner_start_y = 1
-    for i, line in enumerate(banner_lines):
-        stdscr.addstr(banner_start_y + i, (w - len(line)) // 2, line)
+    if w > len(banner_lines[0])+ 4:
+        for i, line in enumerate(banner_lines):
+            stdscr.addstr(banner_start_y + i, (w - len(line)) // 2, line)
 
     # Adjust menu start position based on the banner
     menu_start_y = banner_start_y + len(banner_lines) + 1
