@@ -1,5 +1,6 @@
 import curses
 import os
+import webbrowser
 
 def get_compose_files():
     compose_files = []
@@ -38,6 +39,7 @@ def main(stdscr):
         stdscr.refresh()
         stdscr.getch()
         return
+    compose_files.append("Exit")
     current_row_idx = 0
     print_menu(stdscr, current_row_idx, compose_files)
     while True:
@@ -48,19 +50,22 @@ def main(stdscr):
         elif key == curses.KEY_DOWN and current_row_idx < len(compose_files) - 1:
             current_row_idx += 1
         elif key == curses.KEY_ENTER or key in [10, 13]:
-            selected_file = compose_files[current_row_idx]
-            selected_label = get_label_from_file(selected_file)
-            if selected_label:
-                stdscr.addstr(0, 0, f"Selected: {selected_label}. Running docker-compose...")
-                stdscr.refresh()
-                os.system(f"docker compose -f '{selected_file}' up -d > docker-compose.log 2>&1")
-                print(f"docker compose -f '{selected_file}' up -d > docker-compose.log 2>&1")
-                os.system(f"docker compose -f '{selected_file}' exec kali /bin/bash")
-                break
+            if current_row_idx == len(compose_files) - 1:
+                break  # Exit the loop if "Exit" is selected
             else:
-                stdscr.addstr(0, 0, "Error: No label found for selected file.")
-                stdscr.refresh()
-                stdscr.getch()
+                selected_file = compose_files[current_row_idx]
+                selected_label = get_label_from_file(selected_file)
+                if selected_label:
+                    stdscr.addstr(0, 0, f"Selected: {selected_label}. Running docker-compose... \n")
+                    stdscr.refresh()
+                    os.system(f"docker compose -f '{selected_file}' up -d > /dev/null 2>&1")
+                    os.system(f"docker compose -f '{selected_file}' exec kali /bin/bash")
+                    print("Turning Off Challenge")
+                    os.system(f"docker compose -f '{selected_file}' down > /dev/null 2>&1")
+                else:
+                    stdscr.addstr(0, 0, "Error: No label found for selected file.")
+                    stdscr.refresh()
+                    stdscr.getch()
         print_menu(stdscr, current_row_idx, compose_files)
 
 if __name__ == "__main__":
