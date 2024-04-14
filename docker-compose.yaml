@@ -29,6 +29,8 @@ services:
         ipv4_address: 172.28.1.6
         aliases:
           - webhook-container
+    volumes:
+      - ./Webhook Container:/usr/src/app
 
   backend:
     image: python:3.8-slim
