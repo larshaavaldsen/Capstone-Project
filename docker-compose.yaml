@@ -45,6 +45,25 @@ services:
         aliases:
           - backend
 
+  bruteforce-ssh:
+    image: lscr.io/linuxserver/openssh-server:latest
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - SUDO_ACCESS=true #optional
+      - PASSWORD_ACCESS=true #optional
+      - USER_PASSWORD=password #optional
+      - USER_NAME=admin #optional
+    ports:
+      - 2222:2222
+    restart: unless-stopped
+    networks:
+      webnet:
+        ipv4_address: 172.28.1.8
+    volumes:
+      - ./bruteforce-ssh:/config
+
   kali:
     build: ./kali
     networks:
