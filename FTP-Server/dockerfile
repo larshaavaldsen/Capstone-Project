@@ -10,8 +10,11 @@ RUN mkdir -p /var/run/vsftpd/empty && \
     mkdir -p /etc/vsftpd && \
     mkdir -p /ftp && \
     mkdir -p /secure && \
+    mkdir -p /ftp/upload && \
     echo "FLAG{SECURE_FLAG}" > /secure/flag.txt && \
     chmod 700 /secure && \
+    chmod -R 777 /ftp && \
+    chown ftp:ftp /ftp -R && \
     echo "anonymous_enable=YES" > /etc/vsftpd.conf && \
     echo "local_enable=NO" >> /etc/vsftpd.conf && \
     echo "write_enable=YES" >> /etc/vsftpd.conf && \
@@ -20,14 +23,17 @@ RUN mkdir -p /var/run/vsftpd/empty && \
     echo "anon_mkdir_write_enable=YES" >> /etc/vsftpd.conf && \
     echo "chroot_local_user=YES" >> /etc/vsftpd.conf && \
     echo "allow_writeable_chroot=YES" >> /etc/vsftpd.conf && \
-    echo "listen=NO" >> /etc/vsftpd.conf && \
-    echo "listen_ipv6=YES" >> /etc/vsftpd.conf
+    echo "listen=YES" >> /etc/vsftpd.conf && \
+    echo "listen_ipv6=NO" >> /etc/vsftpd.conf
+
+# Create build directory
+RUN mkdir -p /build
 
 # Add initial Dockerfile to FTP directory
-RUN echo "FROM busybox\nRUN cat /host_secure/flag.txt" > /ftp/Dockerfile
+RUN echo "FROM busybox\nRUN cat /host_secure/flag.txt" > /ftp/upload/Dockerfile
 
 # Add rebuild script
-RUN echo "#!/bin/bash\nwhile true; do\n cp /ftp/Dockerfile /build/Dockerfile\n docker build -t challenge-image /build --volume /secure:/host_secure\n sleep 60\ndone" > /rebuild.sh && chmod +x /rebuild.sh
+RUN echo "#!/bin/bash\nwhile true; do\n cp /ftp/upload/Dockerfile /build/Dockerfile\n docker build -t challenge-image /build --volume /secure:/host_secure\n sleep 60\ndone" > /rebuild.sh && chmod +x /rebuild.sh
 
 # Start script
 CMD service vsftpd start && /rebuild.sh

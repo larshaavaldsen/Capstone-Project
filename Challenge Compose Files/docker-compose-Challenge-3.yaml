@@ -13,7 +13,6 @@ networks:
 services:
 
   ftp:
-    image: python:3.8-slim
     build: ../FTP-Server
     networks:
       webnet:
