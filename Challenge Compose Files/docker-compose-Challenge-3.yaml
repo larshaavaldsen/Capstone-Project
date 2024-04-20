@@ -1,0 +1,32 @@
+#Challenge 3: FTP Fumble
+version: "3.8"
+
+networks:
+  webnet:
+    driver: bridge
+    name: webnet
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.28.1.0/24
+
+services:
+
+  ftp:
+    image: python:3.8-slim
+    build: ../FTP-Server
+    networks:
+      webnet:
+        ipv4_address: 172.28.1.4
+        aliases:
+          - ftp
+
+  kali:
+    build: ../kali
+    networks:
+      webnet:
+        ipv4_address: 172.28.1.5
+        aliases:
+          - kali
+    command: tail -f /dev/null # Keep the container running
+
