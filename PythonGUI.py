@@ -7,13 +7,13 @@ scoring_link = "www.google.com"
 
 def get_compose_files():
     compose_files = []
-    for file_name in os.listdir("."):
+    for file_name in os.listdir("Challenge Compose Files"):
         if file_name.endswith(".yaml") or file_name.endswith(".yml"):
             compose_files.append(file_name)
     return compose_files
 
 def get_label_from_file(file_name):
-    with open(f"{file_name}", "r") as file:
+    with open(f"Challenge Compose Files/{file_name}", "r") as file:
         first_line = file.readline().strip()
         if first_line.startswith("#"):
             return first_line[1:].strip()
@@ -39,7 +39,7 @@ def print_menu(stdscr, selected_row_idx, compose_files):
     banner_start_y = 1
     if w > len(banner_lines[0])+ 4:
         for i, line in enumerate(banner_lines):
-            stdscr.addstr(banner_start_y + i, (w - len(line)) // 2, line)
+            stdscr.addstr(banner_start_y + i, (w - len(line)) // 2, line)  
 
     # Adjust menu start position based on the banner
     menu_start_y = banner_start_y + len(banner_lines) + 1
@@ -90,10 +90,10 @@ def main(stdscr):
                 if selected_label:
                     stdscr.addstr(0, 0, f"Selected: {selected_label}. Running docker compose... \n")
                     stdscr.refresh()
-                    os.system(f"docker compose -f '{selected_file}' up -d > /dev/null 2>&1")
-                    os.system(f"docker compose -f '{selected_file}' exec kali /bin/bash")
+                    os.system(f"docker compose -f 'Challenge Compose Files/{selected_file}' up -d > /dev/null 2>&1")
+                    os.system(f"docker compose -f 'Challenge Compose Files/{selected_file}' exec kali /bin/bash")
                     print("Turning Off Challenge...")
-                    os.system(f"docker compose -f '{selected_file}' down > /dev/null 2>&1")
+                    os.system(f"docker compose -f 'Challenge Compose Files/{selected_file}' down > /dev/null 2>&1")
                 else:
                     stdscr.addstr(0, 0, "Error: No label found for selected file.")
                     stdscr.refresh()
