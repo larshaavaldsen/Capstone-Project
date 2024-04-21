@@ -90,7 +90,7 @@ def main(stdscr):
                 if selected_label:
                     stdscr.addstr(0, 0, f"Selected: {selected_label}. Running docker compose... \n")
                     stdscr.refresh()
-                    os.system(f"docker compose -f 'Challenge Compose Files/{selected_file}' up -d > /dev/null 2>&1")
+                    os.system(f"docker compose -f 'Challenge Compose Files/{selected_file}' up --build -d > /dev/null 2>&1")
                     os.system(f"docker compose -f 'Challenge Compose Files/{selected_file}' exec kali /bin/bash")
                     print("Turning Off Challenge...")
                     os.system(f"docker compose -f 'Challenge Compose Files/{selected_file}' down > /dev/null 2>&1")
