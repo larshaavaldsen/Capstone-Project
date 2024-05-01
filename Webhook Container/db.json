@@ -3,17 +3,20 @@
     {
       "name": "lfi-challenge",
       "points": 100,
-      "completed": false
+      "completed": true,
+      "docs": "http://google.com"
     },
     {
       "name": "bruteforce-ssh",
       "points": 100,
-      "completed": false
+      "completed": false,
+      "docs": "http://google.com"
     },
     {
       "name": "Challenge3",
       "points": 100,
-      "completed": false
+      "completed": false,
+      "docs": "http://google.com"
     }
   ]
 }
