@@ -2,7 +2,7 @@
 include 'secure/cookiecheck.php';
 if (checkKook()){
     print('Congratulations, you have compromised this site. Good work!');
-    get_headers("http://172.28.1.6:3000/lfi-challenge");
+    get_headers("http://172.28.1.6:3000/LFI-Challenge");
 }
 else{
     $bruh = "(ง'̀-'́)ง";

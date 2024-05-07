@@ -1,19 +1,25 @@
 {
   "challenges": [
     {
-      "name": "lfi-challenge",
-      "points": 100,
-      "completed": true,
-      "docs": "http://google.com"
-    },
-    {
-      "name": "bruteforce-ssh",
+      "name": "LFI-Challenge",
       "points": 100,
       "completed": false,
       "docs": "http://google.com"
     },
     {
-      "name": "Challenge3",
+      "name": "Bruteforce-SSH",
+      "points": 100,
+      "completed": false,
+      "docs": "http://google.com"
+    },
+    {
+      "name": "FTP-Fumble",
+      "points": 100,
+      "completed": false,
+      "docs": "http://google.com"
+    },
+    {
+      "name": "SQL-Smash",
       "points": 100,
       "completed": false,
       "docs": "http://google.com"
