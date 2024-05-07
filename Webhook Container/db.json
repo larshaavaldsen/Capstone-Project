@@ -3,7 +3,7 @@
     {
       "name": "LFI-Challenge",
       "points": 100,
-      "completed": true,
+      "completed": false,
       "docs": "http://google.com"
     },
     {

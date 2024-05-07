@@ -1,8 +1,9 @@
+#LFI Challenge
 version: '3.8'
 
 services:
   lfi-challenge:
-    build: ./
+    build: ../lfi-challenge
     networks:
       webnet:
         ipv4_address: 172.28.1.3
