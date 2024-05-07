@@ -22,7 +22,7 @@ services:
       - '40000-40009:40000-40009/tcp'
     networks:
       webnet:
-        ipv4_address: 172.28.1.4
+        ipv4_address: 172.28.1.6
         aliases:
           - ftp
 
