@@ -11,9 +11,15 @@ networks:
         - subnet: 172.28.1.0/24
 
 services:
-
-  ftp:
-    build: ../FTP-Server
+  ftp-server:
+    container_name: my-ftp-server
+    environment:
+      - USERS=one|1234
+      - FTP_USER=user
+    image: delfer/alpine-ftp-server
+    ports:
+      - '20-21:20-21/tcp'
+      - '40000-40009:40000-40009/tcp'
     networks:
       webnet:
         ipv4_address: 172.28.1.4
@@ -22,6 +28,9 @@ services:
 
   kali:
     build: ../kali
+    container_name: kali
+    depends_on: 
+      - ftp-server
     networks:
       webnet:
         ipv4_address: 172.28.1.5
