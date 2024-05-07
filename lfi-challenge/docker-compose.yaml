@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  lfi-challenge:
+    build: ./
+    networks:
+      webnet:
+        ipv4_address: 172.28.1.3
+
+networks:
+  webnet:
+    name: webnet
+    external: true
+    

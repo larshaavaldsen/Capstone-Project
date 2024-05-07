@@ -17,5 +17,5 @@ COPY . .
 
 ENV WEBHOOK_TARGET = "NULL"
 
-EXPOSE 3000
+EXPOSE 80
 CMD [ "node", "index.js" ]
