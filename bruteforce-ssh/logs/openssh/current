@@ -359,3 +359,326 @@
 2024-05-08 19:56:45.589423516  It is required that your private key files are NOT accessible by others.
 2024-05-08 19:56:45.589424990  This private key will be ignored.
 2024-05-08 19:56:45.589873841  sshd: no hostkeys available -- exiting.
+2024-05-08 19:56:46.641258702  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:46.641262566  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:46.641264633  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:46.641266567  Permissions 0644 for '/etc/ssh/ssh_host_rsa_key' are too open.
+2024-05-08 19:56:46.641268576  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:46.641270191  This private key will be ignored.
+2024-05-08 19:56:46.641421357  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:46.641424395  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:46.641426434  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:46.641428326  Permissions 0644 for '/etc/ssh/ssh_host_ecdsa_key' are too open.
+2024-05-08 19:56:46.641430166  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:46.641431673  This private key will be ignored.
+2024-05-08 19:56:46.641643876  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:46.641646888  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:46.641648898  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:46.641650837  Permissions 0644 for '/etc/ssh/ssh_host_ed25519_key' are too open.
+2024-05-08 19:56:46.641652724  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:46.641654223  This private key will be ignored.
+2024-05-08 19:56:46.642128621  sshd: no hostkeys available -- exiting.
+2024-05-08 19:56:47.669374942  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:47.669383582  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:47.669386939  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:47.669390277  Permissions 0644 for '/etc/ssh/ssh_host_rsa_key' are too open.
+2024-05-08 19:56:47.669393469  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:47.669395281  This private key will be ignored.
+2024-05-08 19:56:47.669591301  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:47.669594970  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:47.669597075  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:47.669599014  Permissions 0644 for '/etc/ssh/ssh_host_ecdsa_key' are too open.
+2024-05-08 19:56:47.669600944  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:47.669602490  This private key will be ignored.
+2024-05-08 19:56:47.669973065  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:47.669976324  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:47.669978497  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:47.669984200  Permissions 0644 for '/etc/ssh/ssh_host_ed25519_key' are too open.
+2024-05-08 19:56:47.669986181  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:47.669987757  This private key will be ignored.
+2024-05-08 19:56:47.670617919  sshd: no hostkeys available -- exiting.
+2024-05-08 19:56:48.704964214  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:48.704975632  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:48.704981742  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:48.704987621  Permissions 0644 for '/etc/ssh/ssh_host_rsa_key' are too open.
+2024-05-08 19:56:48.704993648  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:48.704998412  This private key will be ignored.
+2024-05-08 19:56:48.705401141  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:48.705410379  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:48.705416519  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:48.705422318  Permissions 0644 for '/etc/ssh/ssh_host_ecdsa_key' are too open.
+2024-05-08 19:56:48.705427882  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:48.705432303  This private key will be ignored.
+2024-05-08 19:56:48.706217921  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:48.706227218  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:48.706233471  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:48.706239623  Permissions 0644 for '/etc/ssh/ssh_host_ed25519_key' are too open.
+2024-05-08 19:56:48.706245726  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:48.706250782  This private key will be ignored.
+2024-05-08 19:56:48.707630883  sshd: no hostkeys available -- exiting.
+2024-05-08 19:56:49.749090816  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:49.749094882  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:49.749096985  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:49.749098977  Permissions 0644 for '/etc/ssh/ssh_host_rsa_key' are too open.
+2024-05-08 19:56:49.749101040  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:49.749102632  This private key will be ignored.
+2024-05-08 19:56:49.749238817  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:49.749241880  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:49.749243894  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:49.749245807  Permissions 0644 for '/etc/ssh/ssh_host_ecdsa_key' are too open.
+2024-05-08 19:56:49.749247670  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:49.749249153  This private key will be ignored.
+2024-05-08 19:56:49.749464764  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:49.749467813  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:49.749469851  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:49.749471812  Permissions 0644 for '/etc/ssh/ssh_host_ed25519_key' are too open.
+2024-05-08 19:56:49.749473691  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:49.749475190  This private key will be ignored.
+2024-05-08 19:56:49.749921956  sshd: no hostkeys available -- exiting.
+2024-05-08 19:56:50.813616726  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:50.813621056  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:50.813623119  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:50.813625122  Permissions 0644 for '/etc/ssh/ssh_host_rsa_key' are too open.
+2024-05-08 19:56:50.813627149  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:50.813628807  This private key will be ignored.
+2024-05-08 19:56:50.813767865  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:50.813770892  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:50.813772893  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:50.813774777  Permissions 0644 for '/etc/ssh/ssh_host_ecdsa_key' are too open.
+2024-05-08 19:56:50.813776683  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:50.813778156  This private key will be ignored.
+2024-05-08 19:56:50.813987256  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:50.813990341  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:50.813992394  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:50.813994320  Permissions 0644 for '/etc/ssh/ssh_host_ed25519_key' are too open.
+2024-05-08 19:56:50.813996215  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:50.813997713  This private key will be ignored.
+2024-05-08 19:56:50.814449688  sshd: no hostkeys available -- exiting.
+2024-05-08 19:56:51.870991754  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:51.871004252  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:51.871007807  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:51.871015795  Permissions 0644 for '/etc/ssh/ssh_host_rsa_key' are too open.
+2024-05-08 19:56:51.871019273  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:51.871021868  This private key will be ignored.
+2024-05-08 19:56:51.871185384  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:51.871188694  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:51.871196196  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:51.871199198  Permissions 0644 for '/etc/ssh/ssh_host_ecdsa_key' are too open.
+2024-05-08 19:56:51.871206621  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:51.871212998  This private key will be ignored.
+2024-05-08 19:56:51.871453543  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:51.871459609  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:51.871466931  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:51.871469631  Permissions 0644 for '/etc/ssh/ssh_host_ed25519_key' are too open.
+2024-05-08 19:56:51.871476813  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:51.871483166  This private key will be ignored.
+2024-05-08 19:56:51.871948756  sshd: no hostkeys available -- exiting.
+2024-05-08 19:56:52.938969518  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:52.938973360  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:52.938975467  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:52.938977491  Permissions 0644 for '/etc/ssh/ssh_host_rsa_key' are too open.
+2024-05-08 19:56:52.938979470  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:52.938981086  This private key will be ignored.
+2024-05-08 19:56:52.939143320  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:52.939146419  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:52.939148477  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:52.939150425  Permissions 0644 for '/etc/ssh/ssh_host_ecdsa_key' are too open.
+2024-05-08 19:56:52.939152303  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:52.939153786  This private key will be ignored.
+2024-05-08 19:56:52.939516092  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:52.939519570  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:52.939523188  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:52.939526241  Permissions 0644 for '/etc/ssh/ssh_host_ed25519_key' are too open.
+2024-05-08 19:56:52.939529638  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:52.939532277  This private key will be ignored.
+2024-05-08 19:56:52.940049226  sshd: no hostkeys available -- exiting.
+2024-05-08 19:56:53.982630346  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:53.982641124  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:53.982647680  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:53.982653726  Permissions 0644 for '/etc/ssh/ssh_host_rsa_key' are too open.
+2024-05-08 19:56:53.982659835  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:53.982664714  This private key will be ignored.
+2024-05-08 19:56:53.983072936  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:53.983082201  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:53.983088224  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:53.983093820  Permissions 0644 for '/etc/ssh/ssh_host_ecdsa_key' are too open.
+2024-05-08 19:56:53.983099362  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:53.983103810  This private key will be ignored.
+2024-05-08 19:56:53.983767480  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:53.983776674  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:53.983782841  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:53.983788683  Permissions 0644 for '/etc/ssh/ssh_host_ed25519_key' are too open.
+2024-05-08 19:56:53.983794368  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:53.983798889  This private key will be ignored.
+2024-05-08 19:56:53.985189004  sshd: no hostkeys available -- exiting.
+2024-05-08 19:56:55.026799056  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:55.026806211  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:55.026810732  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:55.026819863  Permissions 0644 for '/etc/ssh/ssh_host_rsa_key' are too open.
+2024-05-08 19:56:55.026824047  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:55.026827026  This private key will be ignored.
+2024-05-08 19:56:55.027019634  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:55.027023769  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:55.027032471  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:55.027036354  Permissions 0644 for '/etc/ssh/ssh_host_ecdsa_key' are too open.
+2024-05-08 19:56:55.027044515  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:55.027051931  This private key will be ignored.
+2024-05-08 19:56:55.027336883  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:55.027341326  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:55.027349928  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:55.027353410  Permissions 0644 for '/etc/ssh/ssh_host_ed25519_key' are too open.
+2024-05-08 19:56:55.027362011  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:55.027369792  This private key will be ignored.
+2024-05-08 19:56:55.027941955  sshd: no hostkeys available -- exiting.
+2024-05-08 19:56:56.100753960  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:56.100764127  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:56.100769518  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:56.100774488  Permissions 0644 for '/etc/ssh/ssh_host_rsa_key' are too open.
+2024-05-08 19:56:56.100779474  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:56.100793181  This private key will be ignored.
+2024-05-08 19:56:56.101170869  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:56.101179298  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:56.101184639  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:56.101189617  Permissions 0644 for '/etc/ssh/ssh_host_ecdsa_key' are too open.
+2024-05-08 19:56:56.101194603  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:56.101198521  This private key will be ignored.
+2024-05-08 19:56:56.101781976  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:56.101790124  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:56.101795430  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:56.101800555  Permissions 0644 for '/etc/ssh/ssh_host_ed25519_key' are too open.
+2024-05-08 19:56:56.101805501  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:56.101809368  This private key will be ignored.
+2024-05-08 19:56:56.103166541  sshd: no hostkeys available -- exiting.
+2024-05-08 19:56:57.149067092  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:57.149070973  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:57.149073121  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:57.149075093  Permissions 0644 for '/etc/ssh/ssh_host_rsa_key' are too open.
+2024-05-08 19:56:57.149077155  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:57.149078832  This private key will be ignored.
+2024-05-08 19:56:57.149211446  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:57.149214563  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:57.149216653  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:57.149218576  Permissions 0644 for '/etc/ssh/ssh_host_ecdsa_key' are too open.
+2024-05-08 19:56:57.149220440  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:57.149221916  This private key will be ignored.
+2024-05-08 19:56:57.149443886  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:57.149446973  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:57.149448962  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:57.149450850  Permissions 0644 for '/etc/ssh/ssh_host_ed25519_key' are too open.
+2024-05-08 19:56:57.149452726  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:57.149454223  This private key will be ignored.
+2024-05-08 19:56:57.149912667  sshd: no hostkeys available -- exiting.
+2024-05-08 19:56:58.206757492  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:58.206761452  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:58.206763596  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:58.206765643  Permissions 0644 for '/etc/ssh/ssh_host_rsa_key' are too open.
+2024-05-08 19:56:58.206767628  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:58.206769169  This private key will be ignored.
+2024-05-08 19:56:58.206897887  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:58.206900980  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:58.206902948  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:58.206904830  Permissions 0644 for '/etc/ssh/ssh_host_ecdsa_key' are too open.
+2024-05-08 19:56:58.206906703  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:58.206908195  This private key will be ignored.
+2024-05-08 19:56:58.207127553  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:58.207130585  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:58.207132648  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:58.207134583  Permissions 0644 for '/etc/ssh/ssh_host_ed25519_key' are too open.
+2024-05-08 19:56:58.207136475  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:58.207137973  This private key will be ignored.
+2024-05-08 19:56:58.207646247  sshd: no hostkeys available -- exiting.
+2024-05-08 19:56:59.227254175  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:59.227258835  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:59.227261222  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:59.227263441  Permissions 0644 for '/etc/ssh/ssh_host_rsa_key' are too open.
+2024-05-08 19:56:59.227265727  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:59.227267595  This private key will be ignored.
+2024-05-08 19:56:59.227419077  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:59.227422537  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:59.227424771  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:59.227426908  Permissions 0644 for '/etc/ssh/ssh_host_ecdsa_key' are too open.
+2024-05-08 19:56:59.227428995  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:59.227430710  This private key will be ignored.
+2024-05-08 19:56:59.227666763  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:59.227670270  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:56:59.227672529  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:56:59.227674686  Permissions 0644 for '/etc/ssh/ssh_host_ed25519_key' are too open.
+2024-05-08 19:56:59.227676834  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:56:59.227678559  This private key will be ignored.
+2024-05-08 19:56:59.228212617  sshd: no hostkeys available -- exiting.
+2024-05-08 19:57:00.286913881  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:00.286918042  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:57:00.286920153  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:00.286922073  Permissions 0644 for '/etc/ssh/ssh_host_rsa_key' are too open.
+2024-05-08 19:57:00.286923983  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:57:00.286925558  This private key will be ignored.
+2024-05-08 19:57:00.287079121  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:00.287082130  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:57:00.287084119  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:00.287085848  Permissions 0644 for '/etc/ssh/ssh_host_ecdsa_key' are too open.
+2024-05-08 19:57:00.287087652  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:57:00.287089120  This private key will be ignored.
+2024-05-08 19:57:00.287446960  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:00.287449998  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:57:00.287451997  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:00.287453774  Permissions 0644 for '/etc/ssh/ssh_host_ed25519_key' are too open.
+2024-05-08 19:57:00.287455595  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:57:00.287457055  This private key will be ignored.
+2024-05-08 19:57:00.287987173  sshd: no hostkeys available -- exiting.
+2024-05-08 19:57:01.356401804  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:01.356408482  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:57:01.356410516  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:01.356412432  Permissions 0644 for '/etc/ssh/ssh_host_rsa_key' are too open.
+2024-05-08 19:57:01.356414349  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:57:01.356415882  This private key will be ignored.
+2024-05-08 19:57:01.356505967  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:01.356508120  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:57:01.356512753  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:01.356514480  Permissions 0644 for '/etc/ssh/ssh_host_ecdsa_key' are too open.
+2024-05-08 19:57:01.356519060  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:57:01.356523345  This private key will be ignored.
+2024-05-08 19:57:01.356791985  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:01.356795028  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:57:01.356797017  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:01.356798804  Permissions 0644 for '/etc/ssh/ssh_host_ed25519_key' are too open.
+2024-05-08 19:57:01.356800597  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:57:01.356802062  This private key will be ignored.
+2024-05-08 19:57:01.357262124  sshd: no hostkeys available -- exiting.
+2024-05-08 19:57:02.408103329  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:02.408110738  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:57:02.408114514  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:02.408124095  Permissions 0644 for '/etc/ssh/ssh_host_rsa_key' are too open.
+2024-05-08 19:57:02.408128156  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:57:02.408131305  This private key will be ignored.
+2024-05-08 19:57:02.408329146  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:02.408333100  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:57:02.408341912  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:02.408345697  Permissions 0644 for '/etc/ssh/ssh_host_ecdsa_key' are too open.
+2024-05-08 19:57:02.408353719  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:57:02.408361581  This private key will be ignored.
+2024-05-08 19:57:02.408651047  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:02.408655056  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:57:02.408663737  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:02.408667253  Permissions 0644 for '/etc/ssh/ssh_host_ed25519_key' are too open.
+2024-05-08 19:57:02.408675567  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:57:02.408683279  This private key will be ignored.
+2024-05-08 19:57:02.409254210  sshd: no hostkeys available -- exiting.
+2024-05-08 19:57:03.481869419  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:03.481878933  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:57:03.481884392  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:03.481889586  Permissions 0644 for '/etc/ssh/ssh_host_rsa_key' are too open.
+2024-05-08 19:57:03.481894708  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:57:03.481898836  This private key will be ignored.
+2024-05-08 19:57:03.482282136  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:03.482290217  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:57:03.482295623  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:03.482300462  Permissions 0644 for '/etc/ssh/ssh_host_ecdsa_key' are too open.
+2024-05-08 19:57:03.482305281  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:57:03.482309121  This private key will be ignored.
+2024-05-08 19:57:03.482873179  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:03.482881260  @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2024-05-08 19:57:03.482886659  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2024-05-08 19:57:03.482891487  Permissions 0644 for '/etc/ssh/ssh_host_ed25519_key' are too open.
+2024-05-08 19:57:03.482896339  It is required that your private key files are NOT accessible by others.
+2024-05-08 19:57:03.482900271  This private key will be ignored.
+2024-05-08 19:57:03.484107418  sshd: no hostkeys available -- exiting.

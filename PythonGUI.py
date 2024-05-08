@@ -102,4 +102,5 @@ def main(stdscr):
 
 if __name__ == "__main__":
     curses.wrapper(main)
-
+#Shuts down the webhook container when the program closes
+os.system(f"docker compose -f 'docker-compose-webhook-container.yaml' down > /dev/null 2>&1")
