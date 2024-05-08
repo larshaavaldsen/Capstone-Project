@@ -1,4 +1,4 @@
-#SSH Bruteforce Challenge
+#Challenge 1: SSH Bruteforce Challenge
 version: '3.8'
 
 services:

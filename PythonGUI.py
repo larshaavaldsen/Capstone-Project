@@ -12,6 +12,7 @@ def get_compose_files():
     for file_name in os.listdir("Challenge Compose Files"):
         if file_name.endswith(".yaml") or file_name.endswith(".yml"):
             compose_files.append(file_name)
+    compose_files.sort()
     return compose_files
 
 def get_label_from_file(file_name):

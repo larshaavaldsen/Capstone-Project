@@ -1,4 +1,4 @@
-#LFI Challenge
+#Challenge 2: LFI Challenge
 version: '3.8'
 
 services:
