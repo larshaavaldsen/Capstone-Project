@@ -1,0 +1,42 @@
+#Challenge 3: FTP Fumble
+version: "3.8"
+
+networks:
+  webnet:
+    driver: bridge
+    name: webnet
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.28.1.0/24
+
+services:
+  ftp-server:
+    container_name: my-ftp-server
+    build: ../FTP-Server
+    privileged: true
+    environment:
+      - USERS=one|1234
+      - FTP_USER=user
+    ports:
+      - '20-21:20-21/tcp'
+      - '40000-40009:40000-40009/tcp'
+    command: /bin/bash -c "./start.sh && tail -f /dev/null"
+    networks:
+      webnet:
+        ipv4_address: 172.28.1.6
+        aliases:
+          - ftp
+
+  kali:
+    build: ../kali
+    container_name: kali
+    depends_on: 
+      - ftp-server
+    networks:
+      webnet:
+        ipv4_address: 172.28.1.5
+        aliases:
+          - kali
+    command: tail -f /dev/null # Keep the container running
+
