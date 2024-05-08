@@ -7,4 +7,6 @@ RUN apt-get update && apt-get install -y \
     gobuster \
     vim \
     ftp \
+    iputils-ping \
+    seclists \
     && rm -rf /var/lib/apt/lists/*

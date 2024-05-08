@@ -1,0 +1,23 @@
+#LFI Challenge
+version: '3.8'
+
+services:
+  lfi-challenge:
+    build: ../lfi-challenge
+    networks:
+      webnet:
+        ipv4_address: 172.28.1.3
+
+  kali:
+    build: ../kali
+    networks:
+      webnet:
+        ipv4_address: 172.28.1.5
+    command: tail -f /dev/null # Keep the container running
+
+
+networks:
+  webnet:
+    name: webnet
+    external: true
+    

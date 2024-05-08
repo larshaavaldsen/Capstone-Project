@@ -1,0 +1,20 @@
+#webhook container
+version: '3.8'
+
+services:
+  webhook-container:
+      build: ../Webhook Container
+      networks:
+        webnet:
+          ipv4_address: 172.28.1.2
+      volumes:
+        - ../Webhook Container:/usr/src/app
+
+networks:
+  webnet:
+    name: webnet
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.28.1.0/24

@@ -14,6 +14,6 @@ You can use this template for adding challenges into db.json -
     }
 ```
 
-The endpoint name is everything found after the /, i.e. http://container-ip/{NAME}
+The endpoint name is everything found after the /, i.e. http://172.29.1.2/{NAME}
 
 # NOTE - do not push to repo with challenges set to true in db.json please:)

@@ -1,8 +1,25 @@
 html
-  head
-    title= "Challenge Statuses"
-  body
-    h1= "Current Completion Statuses"
-    ul
-      each chall in statuses
-        li= chall.name + ":" + chall.completed
+  include header.pug
+      
+.card-group
+.row.mb-5
+  .col-md-8.col-xl-8.text-center.mx-auto
+    .table-responsive
+      table.table
+        thead
+          tr
+            th Challenge
+            th Status
+            th Docs
+        tbody
+          each chall in statuses
+            tr(class="font-weight-light") 
+              th= chall.name  
+              if chall.completed 
+                  th(class='text-success') Completed
+              else
+                th(class='text-danger') Incomplete
+
+              td
+                a(href=chall.docs) Link
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js')
