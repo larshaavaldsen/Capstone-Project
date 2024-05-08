@@ -5,4 +5,6 @@ FROM kalilinux/kali-rolling
 RUN apt-get update && apt-get install -y \
     nmap \
     gobuster \
+    iputils-ping \
+    seclists \
     && rm -rf /var/lib/apt/lists/*

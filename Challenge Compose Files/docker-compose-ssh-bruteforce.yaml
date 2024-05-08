@@ -21,6 +21,13 @@ services:
     volumes:
       - ../bruteforce-ssh:/config
 
+  kali:
+    build: ../kali
+    networks:
+      webnet:
+        ipv4_address: 172.28.1.5
+    command: tail -f /dev/null # Keep the container running
+
 networks:
   webnet:
     name: webnet
