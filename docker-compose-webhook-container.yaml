@@ -3,12 +3,12 @@ version: '3.8'
 
 services:
   webhook-container:
-      build: ../Webhook Container
+      build: ./Webhook Container
       networks:
         webnet:
           ipv4_address: 172.28.1.2
       volumes:
-        - ../Webhook Container:/usr/src/app
+        - ./Webhook Container:/usr/src/app
 
 networks:
   webnet:
