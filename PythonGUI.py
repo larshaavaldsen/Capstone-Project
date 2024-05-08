@@ -4,6 +4,8 @@ import webbrowser
 
 documentation_link = "www.youtube.com"
 scoring_link = "www.google.com"
+#Start the webhook container
+os.system(f"docker compose -f 'docker-compose-webhook-container.yaml' up -d > /dev/null 2>&1")
 
 def get_compose_files():
     compose_files = []
