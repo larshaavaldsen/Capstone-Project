@@ -2,8 +2,8 @@ import curses
 import os
 import webbrowser
 
-documentation_link = "www.youtube.com"
-scoring_link = "www.google.com"
+
+scoring_link = "172.28.1.2:80"
 #Start the webhook container
 os.system(f"docker compose -f 'docker-compose-webhook-container.yaml' up -d > /dev/null 2>&1")
 
@@ -67,8 +67,7 @@ def main(stdscr):
         stdscr.refresh()
         stdscr.getch()
         return
-    compose_files.append("Documentation/Guides")
-    compose_files.append("Scoring")
+    compose_files.append("Scoring/Documentation")
     compose_files.append("Exit")
     current_row_idx = 0
     print_menu(stdscr, current_row_idx, compose_files)
@@ -80,9 +79,7 @@ def main(stdscr):
         elif key == curses.KEY_DOWN and current_row_idx < len(compose_files) - 1:
             current_row_idx += 1
         elif key == curses.KEY_ENTER or key in [10, 13]:
-            if current_row_idx == len(compose_files) - 3:
-                webbrowser.open_new_tab(documentation_link)
-            elif current_row_idx == len(compose_files) - 2:
+            if current_row_idx == len(compose_files) - 2:
                 webbrowser.open_new_tab(scoring_link)
             elif current_row_idx == len(compose_files) - 1:
                 break  # Exit the loop if "Exit" is selected
