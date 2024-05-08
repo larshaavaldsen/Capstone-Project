@@ -1,12 +1,29 @@
-# Use a base image with vsftpd and Docker installed
-FROM delfer/alpine-ftp-server
+# Use an Ubuntu base image
+FROM ubuntu:latest
 
-COPY vsftpd.conf /etc/vsftpd/vsftpd.conf
-# Configure vsftpd
+# Avoid prompts from apt
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install necessary packages
+RUN apt-get update \
+    && apt-get install -y docker.io vsftpd \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy vsftpd configuration file
+COPY vsftpd.conf /etc/vsftpd.conf
+
+# Configure vsftpd and directories
 RUN mkdir -p /secure \
     && mkdir -p /ftp/upload \
     && echo "COMPLETION SCRIPT" > /secure/flag.sh \
     && chmod 700 /secure \
     && chmod -R 777 /ftp/upload \
     && chown ftp:ftp /ftp/upload -R
+
+# Use a script to start Docker daemon and vsftpd
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
+
+CMD ./start.sh
 
