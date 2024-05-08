@@ -25,19 +25,26 @@ VOLUME /secure
 CMD echo 'Hello from dummy Dockerfile!' > /ftp/test.txt
 EOF
 
+cp /ftp/upload/Dockerfile /ftp/upload/Dockerfile_copy
+
 # Create a note.txt file in /ftp
 echo "Creating note in /ftp..."
-echo "TODO: remove auto-rebuild script for Dockerfile in upload" > /ftp/note.txt
+echo "TODO: remove auto-build script for any Dockerfile in upload" > /ftp/note.txt
 
 # Function to build Docker image and run with volumes mounted
 build_and_run_image() {
-    echo "Building Docker image from Dockerfile..."
-    docker build -t dummy-image /ftp/upload
-    echo "Running container from built image with volumes..."
-    docker run -d --rm \
-        -v /ftp:/ftp \
-        -v /secure:/secure \
-        dummy-image
+    if [ -f "/ftp/upload/Dockerfile" ]; then
+        echo "Building Docker image from Dockerfile..."
+        docker build -t dummy-image /ftp/upload
+        echo "Running container from built image with volumes..."
+        docker run -d --rm \
+            -v /ftp:/ftp \
+            -v /secure:/secure \
+            dummy-image
+        rm /ftp/upload/Dockerfile
+    else
+        echo "No Dockerfile found. Skipping build and run."
+    fi
 }
 
 # Run build_and_run_image function every 60 seconds
@@ -45,4 +52,3 @@ while true; do
     build_and_run_image
     sleep 60
 done
-
