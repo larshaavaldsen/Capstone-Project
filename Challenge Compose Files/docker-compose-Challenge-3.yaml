@@ -13,10 +13,14 @@ networks:
 services:
   ftp-server:
     container_name: my-ftp-server
+    build: ../FTP-Server
     environment:
       - USERS=one|1234
       - FTP_USER=user
-    image: delfer/alpine-ftp-server
+    #Step 1: Allow anon login
+    #Step 2: Create /secure directory
+    #Step 3: Create completion script inside /secure
+    #Step 4: Run script to rebuild dockerfile
     ports:
       - '20-21:20-21/tcp'
       - '40000-40009:40000-40009/tcp'
