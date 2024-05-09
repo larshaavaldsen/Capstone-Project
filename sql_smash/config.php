@@ -2,7 +2,7 @@
 
 /* Attempt to connect to MySQL database */
 $link = mysqli_connect(
-    'db',
+    '172.28.1.8',
     'php_docker',
     'password',
     'php_docker'
