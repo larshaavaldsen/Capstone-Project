@@ -17,7 +17,7 @@ services:
       context: ../sql_smash
       dockerfile: Dockerfile
     volumes:
-      - "./:/var/www/html"
+      - "../sql_smash/:/var/www/html"
     ports:
       - 80:80
       - 443:443
@@ -25,7 +25,7 @@ services:
       webnet:
         ipv4_address: 172.28.1.7
         aliases:
-          - kali
+          - www
 
   db:
     image: mysql:latest
@@ -35,7 +35,7 @@ services:
       - MYSQL_PASSWORD=password
       - MYSQL_ALLOW_EMPTY_PASSWORD=1
     volumes:
-      - "./db:/docker-entrypoint-initdb.d" # syncs persistent sql files on container
+      - "../sql_smash/db:/docker-entrypoint-initdb.d" # syncs persistent sql files on container
     networks:
       webnet:
         ipv4_address: 172.28.1.8
