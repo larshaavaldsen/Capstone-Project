@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
     ftp \
     iputils-ping \
     ssh \
+    wget \
     && rm -rf /var/lib/apt/lists/*
 
 COPY ./2020-200_most_used_passwords.txt ./

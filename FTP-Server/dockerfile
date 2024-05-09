@@ -16,7 +16,7 @@ COPY vsftpd.conf /etc/vsftpd.conf
 # Configure vsftpd and directories
 RUN mkdir -p /secure \
     && mkdir -p /ftp/upload \
-    && echo "COMPLETION SCRIPT" > /secure/flag.sh \
+    && echo "#!/bin/bash\nwget http://172.28.1.2/FTP-Fumble\necho 'Challenge Complete!'" > /secure/flag.sh \
     && chmod 700 /secure \
     && chmod -R 777 /ftp/upload \
     && chown ftp:ftp /ftp/upload -R
