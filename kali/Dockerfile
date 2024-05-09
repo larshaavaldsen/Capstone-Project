@@ -4,7 +4,7 @@ FROM kalilinux/kali-rolling
 # Install nmap and gobuster
 RUN apt-get update && apt-get install -y \
     nmap \
-    gobuster \
+    hydra \
     vim \
     ftp \
     iputils-ping \
