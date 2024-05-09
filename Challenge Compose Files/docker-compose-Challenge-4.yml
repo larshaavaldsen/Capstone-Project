@@ -1,0 +1,66 @@
+#Challenge 4: SQL Smash
+version: '3'
+
+networks:
+  webnet:
+    driver: bridge
+    name: webnet
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.28.1.0/24
+
+services:
+
+  www:
+    build:
+      context: ../sql_smash
+      dockerfile: Dockerfile
+    volumes:
+      - "./:/var/www/html"
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      webnet:
+        ipv4_address: 172.28.1.7
+        aliases:
+          - kali
+
+  db:
+    image: mysql:latest
+    environment:
+      - MYSQL_DATABASE=php_docker
+      - MYSQL_USER=php_docker
+      - MYSQL_PASSWORD=password
+      - MYSQL_ALLOW_EMPTY_PASSWORD=1
+    volumes:
+      - "./db:/docker-entrypoint-initdb.d" # syncs persistent sql files on container
+    networks:
+      webnet:
+        ipv4_address: 172.28.1.8
+        aliases:
+          - db
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 8001:80
+    environment:
+      - PMA_HOST=db
+      - PMA_PORT=3306
+    networks:
+      webnet:
+        ipv4_address: 172.28.1.9
+        aliases:
+          - phpmyadmin
+
+  kali:
+    build: ../kali
+    container_name: kali
+    networks:
+      webnet:
+        ipv4_address: 172.28.1.5
+        aliases:
+          - kali
+    command: tail -f /dev/null # Keep the container running
