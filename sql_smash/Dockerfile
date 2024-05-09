@@ -1,0 +1,5 @@
+# Use an official PHP runtime as the base image
+FROM php:apache
+
+# Install the mysqli extension
+RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli

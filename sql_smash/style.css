@@ -1,0 +1,19 @@
+body{
+    background-color: darkgray;
+}
+#form{
+    background-color: whitesmoke;
+    width: 25%;
+    margin: 120px auto;
+    padding: 50px;
+    box-shadow: 10px 10px 5px;
+    border-radius: 6px;
+}
+#btn{
+    color: black;
+    background-color: darkgray;
+    padding: 10px;
+    font-size: large;
+    border-radius: 10px;
+    border-color: black;
+}
