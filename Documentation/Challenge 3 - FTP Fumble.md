@@ -1,10 +1,10 @@
-Machines on network:
+## Machines on network:
 
 172\.28.1.6 - **FTP server**
 
 172\.28.1.5 - **Kali Linux container**
 
-Overview of Challenge:
+## Overview of Challenge:
 
 This challenge will involve using an improperly secured FTP server to access and modify a Dockerfile that is set up to be built automatically.
 
