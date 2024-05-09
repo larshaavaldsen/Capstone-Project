@@ -1,3 +1,7 @@
+<?php
+    get_headers("http://172.28.1.2/SQL-Smash");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
