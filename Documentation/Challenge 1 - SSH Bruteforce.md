@@ -55,7 +55,7 @@ Now that we have found an open port to exploit, we can start our attack. For thi
 
 **"172.28.1.4 ssh"** specifies our target IP, and tells Hydra to attack over SSH
 
-This command will output
+This command will output:
 ```
 Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
 
@@ -77,7 +77,7 @@ We can login to the target over SSH with the following command (Just replace \<r
 
 You will be prompted for the password you just found, and then you will have a shell!
 
-If we run ```ls -la``` in our new shell, we will get the following output
+If we run ```ls -la``` in our new shell, we will get the following output:
 
 ``` 526645b89d41:~$ ls -la
 total 28
