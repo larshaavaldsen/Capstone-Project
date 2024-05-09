@@ -8,5 +8,8 @@ RUN apt-get update && apt-get install -y \
     vim \
     ftp \
     iputils-ping \
-    seclists \
+    ssh \
     && rm -rf /var/lib/apt/lists/*
+
+COPY ./2020-200_most_used_passwords.txt ./
+COPY ./top-usernames-shortlist.txt ./

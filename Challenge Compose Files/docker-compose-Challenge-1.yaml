@@ -10,8 +10,8 @@ services:
       - TZ=Etc/UTC
       - SUDO_ACCESS=true #optional
       - PASSWORD_ACCESS=true #optional
-      - USER_PASSWORD=password #optional
-      - USER_NAME=admin #optional
+      - USER_PASSWORD=welcome #optional
+      - USER_NAME=pi #optional
     ports:
       - 2222:2222
     restart: unless-stopped
