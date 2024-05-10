@@ -12,7 +12,7 @@ Walkthrough:
 
 
 ## 1) Reconnaissance
-Firstly, let's go to the website. We are greeted with the index.html page with a login form, and a link to the help center. Upon closer inspection of the form by viewing the source code in the browser (right click, view page source), we can see that the input from the form is sent to the login.php file. Let's remember this and check out the help center.
+Firstly, let's go to the website http://172.28.1.3/. We are greeted with the index.html page with a login form, and a link to the help center. Upon closer inspection of the form by viewing the source code in the browser (right click, view page source), we can see that the input from the form is sent to the login.php file. Let's remember this and check out the help center.
  
 In the help center, we see three links, each to a different page in the help center. If we click the first one, we see that "admin" is the default username. This could be useful for the future so we will remember this. 
 
