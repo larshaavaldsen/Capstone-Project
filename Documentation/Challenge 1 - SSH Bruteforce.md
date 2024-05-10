@@ -43,7 +43,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.43 seconds
 As we can see, nmap detects a OpenSSH server running on port 2222
 
 ## 2) Attacking the target
-Now that we have found an open port to exploit, we can start our attack. For this attack we will use the "top-usernames-shortlist.txt" as our username wordlist, and the "2020-200_most_used_passwords.txt" as our password wordlist. We can use the following Hydra command to start the attack
+Now that we have found an open port to exploit, we can start our attack. For this attack we will use the "top-usernames-shortlist.txt" as our username wordlist, and the "2020-200_most_used_passwords.txt" as our password wordlist. These wordlists are from the Seclist repository, which can be found here https://github.com/danielmiessler/SecLists. We can use the following Hydra command to start the attack
 
 ```hydra -s 2222 -L top-usernames-shortlist.txt -P 2020-200_most_used_passwords.txt 172.28.1.4 ssh```
 

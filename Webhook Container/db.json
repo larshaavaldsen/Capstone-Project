@@ -10,7 +10,7 @@
       "name": "Bruteforce-SSH",
       "points": 100,
       "completed": false,
-      "docs": "http://google.com"
+      "docs": "https://github.com/larshaavaldsen/Capstone-Project/blob/main/Documentation/Challenge%201%20-%20SSH%20Bruteforce.md"
     },
     {
       "name": "FTP-Fumble",
